@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+.hamburger{}
+
+.hamburger:hover .effect{
+    display: flex;
+    flex-direction: column;
+    
+}

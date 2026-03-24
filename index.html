@@ -12,13 +12,13 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>School Sample</title>
 </head>
-<body class="min-h-screen   bg-[#FEF2F2]">
+<body class="min-h-screen">
 
     <!--::::::::: nav section :::::::::::  -->
     <!--::::::::: nav section :::::::::::  -->
     <!--::::::::: nav section :::::::::::  -->
 
-    <nav class="flex my-5">
+    <nav class="flex  bg-[#FEF2F2] py-5">
         <div class="flex-1 flex justify-end font-bold items-center font-[poppins] text-2xl">
             Brandname
         </div>
@@ -37,24 +37,33 @@
             <button class="bg-[#95BB79]  flex gap-2 px-5 py-3  text-white font-medium rounded-md ">
                 JOIN US <span class=" fa fa-arrow-right"></span>
             </button>
-           
         </div>
-         <span class="flex-1 md:hidden sm:block">
-                <div class=" fa fa-bars"></div>
-            </span>
+         <div class="relative hamburger md:hidden flex-1  w-fit  items-center justify-center">
+             <!-- hamburger container -->
+            
+                <div class="inline-block md:hidden  fa fa-bars"></div>
+            
+            <!-- drop down content -->
+             <div class=" effect hidden   absolute top-[70] right-10 min-w-50 ">
+                <a class="block py-4">Home</a>
+                <a class="block py-4">Product</a>
+                <a class="block py-4">Pricing</a>
+                <a class="block py-4">Contact</a>
+             </div>
+         </div>
     </nav>
 
     <!--:::::::::: FIRST SECTION ::::::::::::  -->
     <!--:::::::::: FIRST SECTION ::::::::::::  -->
     <!--:::::::::: FIRST SECTION ::::::::::::  -->
 
-    <main class="flex flex-col md:flex-row">
+    <main class="flex   bg-[#FEF2F2] flex-col md:flex-row">
         <div class="">
-           <div class=" max-sm:text-center max-sm:justify-center md:justify-start   md:mx-40 my-30 ">
+           <div class=" flex-1 max-sm:text-center max-sm:justify-center md:justify-start md:px-40 my-30 ">
              <div class="text-[#95BB79] pb-8 font-[poppins]">
                 welcome
             </div>
-            <h1 class=" font-bold text-5xl leading-15 pb-7 text-[#232A3F] font-[poppins]">
+            <h1 class=" font-bold md:text-5xl leading-15 pb-7 text-[#232A3F] font-[poppins]">
                 Best Learning <br> Opportunities
             </h1>
             <p class="text-[#7D7374]  font-[poppins] text-xl">
@@ -71,8 +80,8 @@
            </div>
         </div>
         <!-- IMAGE -->
-        <div class=" flex justify-end">
-            <img  class="w-full" src="images/s-girl.png" alt="">
+        <div class="flex-1 flex justify-end">
+            <img  class="" src="images/s-girl.png" alt="">
         </div>
     </main>
 
@@ -80,7 +89,7 @@
         <!--:::::::::: SECOND  SECTION ::::::::::::  -->
         <!--:::::::::: SECOND  SECTION ::::::::::::  -->
 
-    <section class="bg-white  flex flex-col md:flex-row">
+    <section class="bg-white flex flex-col md:flex-row">
         <div class="flex-1 ">
         <div class=" max-sm:text-center max-sm:justify-center md:my-30 md:mx-40">
         <div class="bg-[#E64040] max-sm:ml-35 max-sm:w-40 max-sm:mt-20 h-2  w-30 mb-10">
@@ -97,9 +106,9 @@
         </div>
         </div>
         </div>
-        <div class="flex-1 flex gap-5 ">
+        <div class="flex-1 flex flex-col md:flex-row items-center gap-5 ">
             <!-- IMAGE -->
-            <div class="h-70 max-sm:ml-5 w-55 my-30 flex flex-col items-start shadow-xl  bg-white">
+            <div class="h-70 max-sm:ml-5 w-55 md:my-30 flex flex-col items-start shadow-xl  bg-white">
                 <img class="bg-white py-5 pl-5" src="images/screen.png" alt="desktop">
                 <h2 class="font-bold text-[#232A3F] font-[poppins] text-3sm pl-5 pb-5">
                     Certified Teacher
@@ -110,7 +119,7 @@
                 </p>
             </div>
             <div>
-                <div class="h-70 w-55 my-30 flex flex-col items-start shadow-xl  bg-white">
+                <div class="h-70 w-55 md:my-30 flex flex-col items-start shadow-xl  bg-white">
                 <img class="bg-white py-5 pl-5" src="images/scope.png" alt="desktop">
                 <h2 class="font-bold text-[#232A3F] font-[poppins] text-3sm pl-5 pb-5">
                     Certified Teacher
@@ -129,7 +138,7 @@
     <!--::::::::::: THIRD SECTION ::::::::::::  -->
     <!--::::::::::: THIRD SECTION ::::::::::::  -->
 
-    <section class="bg-white flex gap-10 md:px-40 md:flex-row flex-col">
+    <!-- <section class="bg-white flex gap-10 md:px-40 md:flex-row flex-col">
         <div class="">
             <img class="" src="images/l-girl.png" alt="girl">
         </div>
@@ -151,6 +160,6 @@
         </div>
         </div>
         </div>
-    </section>
+    </section> -->
 </body>
 </html>
