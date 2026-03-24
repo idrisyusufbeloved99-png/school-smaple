@@ -5,6 +5,5 @@
 .hamburger:hover .effect{
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     padding-left:12rem ;
 }
